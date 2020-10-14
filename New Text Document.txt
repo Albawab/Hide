@@ -1,0 +1,19 @@
+        /// <summary>
+        /// Zet de horizontal align tot string om.
+        /// </summary>
+        /// <param name="horizontal">Waar een element wordt geplaatst.// horizontal.</param>
+        /// <returns>De horizontal aligan enum als string.</returns>
+        public static string ToBootstrap(this HorizontalAlign horizontal)
+        {
+            return horizontal switch
+            {
+                HorizontalAlign.Left => "start",
+                HorizontalAlign.Center => "center",
+                HorizontalAlign.Right => "end",
+                _ => string.Empty,
+            };
+        }
+
+
+Delete
+css formulier-lijst-en-item-annuleren
